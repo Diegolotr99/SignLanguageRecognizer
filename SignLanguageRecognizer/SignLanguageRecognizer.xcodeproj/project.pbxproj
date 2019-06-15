@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EFEFE51EBEC6D9E4200D987 /* Pods_SignLanguageRecognizerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413AF3110E90161A761F7F02 /* Pods_SignLanguageRecognizerUITests.framework */; };
+		12B88677DC9837FE86161C92 /* Pods_SignLanguageRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFCDDDE1AB87A9BDF19355D /* Pods_SignLanguageRecognizer.framework */; };
+		383B38768012E0DD7E4BDE32 /* Pods_SignLanguageRecognizerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22B1432021279C4F4E72D3C /* Pods_SignLanguageRecognizerTests.framework */; };
 		4661718922B57E37009A461B /* SignClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4661718822B57E37009A461B /* SignClassifier.mlmodel */; };
+		4661718B22B588CA009A461B /* ViewController+Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661718A22B588CA009A461B /* ViewController+Component.swift */; };
+		4661718D22B588DF009A461B /* ViewController+Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661718C22B588DF009A461B /* ViewController+Subview.swift */; };
+		4661718F22B588F1009A461B /* ViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661718E22B588F1009A461B /* ViewController+Setup.swift */; };
+		4661719122B58AF9009A461B /* ViewController+Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661719022B58AF9009A461B /* ViewController+Capture.swift */; };
 		46653EBD22A78FD400993E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46653EBC22A78FD400993E85 /* AppDelegate.swift */; };
 		46653EBF22A78FD400993E85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46653EBE22A78FD400993E85 /* ViewController.swift */; };
 		46653EC222A78FD400993E85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46653EC022A78FD400993E85 /* Main.storyboard */; };
@@ -35,7 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BFCDDDE1AB87A9BDF19355D /* Pods_SignLanguageRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignLanguageRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		213551BCA9A7878882A465BA /* Pods-SignLanguageRecognizerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignLanguageRecognizerTests.debug.xcconfig"; path = "Target Support Files/Pods-SignLanguageRecognizerTests/Pods-SignLanguageRecognizerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		413AF3110E90161A761F7F02 /* Pods_SignLanguageRecognizerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignLanguageRecognizerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4661718822B57E37009A461B /* SignClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SignClassifier.mlmodel; sourceTree = "<group>"; };
+		4661718A22B588CA009A461B /* ViewController+Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Component.swift"; sourceTree = "<group>"; };
+		4661718C22B588DF009A461B /* ViewController+Subview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Subview.swift"; sourceTree = "<group>"; };
+		4661718E22B588F1009A461B /* ViewController+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Setup.swift"; sourceTree = "<group>"; };
+		4661719022B58AF9009A461B /* ViewController+Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Capture.swift"; sourceTree = "<group>"; };
 		46653EB922A78FD400993E85 /* SignLanguageRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignLanguageRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46653EBC22A78FD400993E85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46653EBE22A78FD400993E85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +63,12 @@
 		46653ED822A78FD600993E85 /* SignLanguageRecognizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignLanguageRecognizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46653EDC22A78FD600993E85 /* SignLanguageRecognizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignLanguageRecognizerUITests.swift; sourceTree = "<group>"; };
 		46653EDE22A78FD600993E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		510D4B4B987FDD63F0C8AB18 /* Pods-SignLanguageRecognizerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignLanguageRecognizerUITests.release.xcconfig"; path = "Target Support Files/Pods-SignLanguageRecognizerUITests/Pods-SignLanguageRecognizerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		52574C88CB26E216D360F7B9 /* Pods-SignLanguageRecognizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignLanguageRecognizer.release.xcconfig"; path = "Target Support Files/Pods-SignLanguageRecognizer/Pods-SignLanguageRecognizer.release.xcconfig"; sourceTree = "<group>"; };
+		77D20CB2C255EFD1DEAA8BCB /* Pods-SignLanguageRecognizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignLanguageRecognizer.debug.xcconfig"; path = "Target Support Files/Pods-SignLanguageRecognizer/Pods-SignLanguageRecognizer.debug.xcconfig"; sourceTree = "<group>"; };
+		865FB3C29DF51FCF5ADC0C71 /* Pods-SignLanguageRecognizerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignLanguageRecognizerTests.release.xcconfig"; path = "Target Support Files/Pods-SignLanguageRecognizerTests/Pods-SignLanguageRecognizerTests.release.xcconfig"; sourceTree = "<group>"; };
+		CDFBAADCD3FD57A02AEC2DD3 /* Pods-SignLanguageRecognizerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignLanguageRecognizerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SignLanguageRecognizerUITests/Pods-SignLanguageRecognizerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E22B1432021279C4F4E72D3C /* Pods_SignLanguageRecognizerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignLanguageRecognizerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B88677DC9837FE86161C92 /* Pods_SignLanguageRecognizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				383B38768012E0DD7E4BDE32 /* Pods_SignLanguageRecognizerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EFEFE51EBEC6D9E4200D987 /* Pods_SignLanguageRecognizerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +106,8 @@
 				46653ED022A78FD600993E85 /* SignLanguageRecognizerTests */,
 				46653EDB22A78FD600993E85 /* SignLanguageRecognizerUITests */,
 				46653EBA22A78FD400993E85 /* Products */,
+				859FB05DCFA4F9584D11B1BF /* Pods */,
+				E949242CFE473E0556A9FDA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +126,10 @@
 			children = (
 				46653EBC22A78FD400993E85 /* AppDelegate.swift */,
 				46653EBE22A78FD400993E85 /* ViewController.swift */,
+				4661718A22B588CA009A461B /* ViewController+Component.swift */,
+				4661718C22B588DF009A461B /* ViewController+Subview.swift */,
+				4661718E22B588F1009A461B /* ViewController+Setup.swift */,
+				4661719022B58AF9009A461B /* ViewController+Capture.swift */,
 				4661718822B57E37009A461B /* SignClassifier.mlmodel */,
 				46653EC022A78FD400993E85 /* Main.storyboard */,
 				46653EC322A78FD600993E85 /* Assets.xcassets */,
@@ -128,6 +157,30 @@
 			path = SignLanguageRecognizerUITests;
 			sourceTree = "<group>";
 		};
+		859FB05DCFA4F9584D11B1BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77D20CB2C255EFD1DEAA8BCB /* Pods-SignLanguageRecognizer.debug.xcconfig */,
+				52574C88CB26E216D360F7B9 /* Pods-SignLanguageRecognizer.release.xcconfig */,
+				213551BCA9A7878882A465BA /* Pods-SignLanguageRecognizerTests.debug.xcconfig */,
+				865FB3C29DF51FCF5ADC0C71 /* Pods-SignLanguageRecognizerTests.release.xcconfig */,
+				CDFBAADCD3FD57A02AEC2DD3 /* Pods-SignLanguageRecognizerUITests.debug.xcconfig */,
+				510D4B4B987FDD63F0C8AB18 /* Pods-SignLanguageRecognizerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E949242CFE473E0556A9FDA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BFCDDDE1AB87A9BDF19355D /* Pods_SignLanguageRecognizer.framework */,
+				E22B1432021279C4F4E72D3C /* Pods_SignLanguageRecognizerTests.framework */,
+				413AF3110E90161A761F7F02 /* Pods_SignLanguageRecognizerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46653EE122A78FD600993E85 /* Build configuration list for PBXNativeTarget "SignLanguageRecognizer" */;
 			buildPhases = (
+				439E53957AA38B905F2053D5 /* [CP] Check Pods Manifest.lock */,
 				46653EB522A78FD400993E85 /* Sources */,
 				46653EB622A78FD400993E85 /* Frameworks */,
 				46653EB722A78FD400993E85 /* Resources */,
+				B134FEA8AE7056AF69ED93EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46653EE422A78FD600993E85 /* Build configuration list for PBXNativeTarget "SignLanguageRecognizerTests" */;
 			buildPhases = (
+				12C0130DD503A35479627A23 /* [CP] Check Pods Manifest.lock */,
 				46653EC922A78FD600993E85 /* Sources */,
 				46653ECA22A78FD600993E85 /* Frameworks */,
 				46653ECB22A78FD600993E85 /* Resources */,
@@ -170,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46653EE722A78FD600993E85 /* Build configuration list for PBXNativeTarget "SignLanguageRecognizerUITests" */;
 			buildPhases = (
+				63D5DA9B12978AD776DC9E21 /* [CP] Check Pods Manifest.lock */,
 				46653ED422A78FD600993E85 /* Sources */,
 				46653ED522A78FD600993E85 /* Frameworks */,
 				46653ED622A78FD600993E85 /* Resources */,
@@ -254,14 +311,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12C0130DD503A35479627A23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SignLanguageRecognizerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		439E53957AA38B905F2053D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SignLanguageRecognizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63D5DA9B12978AD776DC9E21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SignLanguageRecognizerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B134FEA8AE7056AF69ED93EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SignLanguageRecognizer/Pods-SignLanguageRecognizer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SignLanguageRecognizer/Pods-SignLanguageRecognizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46653EB522A78FD400993E85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				46653EBF22A78FD400993E85 /* ViewController.swift in Sources */,
+				4661719122B58AF9009A461B /* ViewController+Capture.swift in Sources */,
 				4661718922B57E37009A461B /* SignClassifier.mlmodel in Sources */,
+				4661718B22B588CA009A461B /* ViewController+Component.swift in Sources */,
 				46653EBD22A78FD400993E85 /* AppDelegate.swift in Sources */,
+				4661718F22B588F1009A461B /* ViewController+Setup.swift in Sources */,
+				4661718D22B588DF009A461B /* ViewController+Subview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +586,7 @@
 		};
 		46653EE222A78FD600993E85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D20CB2C255EFD1DEAA8BCB /* Pods-SignLanguageRecognizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +605,7 @@
 		};
 		46653EE322A78FD600993E85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52574C88CB26E216D360F7B9 /* Pods-SignLanguageRecognizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +624,7 @@
 		};
 		46653EE522A78FD600993E85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213551BCA9A7878882A465BA /* Pods-SignLanguageRecognizerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +646,7 @@
 		};
 		46653EE622A78FD600993E85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 865FB3C29DF51FCF5ADC0C71 /* Pods-SignLanguageRecognizerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +668,7 @@
 		};
 		46653EE822A78FD600993E85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDFBAADCD3FD57A02AEC2DD3 /* Pods-SignLanguageRecognizerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +689,7 @@
 		};
 		46653EE922A78FD600993E85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 510D4B4B987FDD63F0C8AB18 /* Pods-SignLanguageRecognizerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
