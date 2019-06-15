@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4661718922B57E37009A461B /* SignClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4661718822B57E37009A461B /* SignClassifier.mlmodel */; };
 		46653EBD22A78FD400993E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46653EBC22A78FD400993E85 /* AppDelegate.swift */; };
 		46653EBF22A78FD400993E85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46653EBE22A78FD400993E85 /* ViewController.swift */; };
 		46653EC222A78FD400993E85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46653EC022A78FD400993E85 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4661718822B57E37009A461B /* SignClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SignClassifier.mlmodel; sourceTree = "<group>"; };
 		46653EB922A78FD400993E85 /* SignLanguageRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignLanguageRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46653EBC22A78FD400993E85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46653EBE22A78FD400993E85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				46653EBC22A78FD400993E85 /* AppDelegate.swift */,
 				46653EBE22A78FD400993E85 /* ViewController.swift */,
+				4661718822B57E37009A461B /* SignClassifier.mlmodel */,
 				46653EC022A78FD400993E85 /* Main.storyboard */,
 				46653EC322A78FD600993E85 /* Assets.xcassets */,
 				46653EC522A78FD600993E85 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46653EBF22A78FD400993E85 /* ViewController.swift in Sources */,
+				4661718922B57E37009A461B /* SignClassifier.mlmodel in Sources */,
 				46653EBD22A78FD400993E85 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = aivatradev.SignLanguageRecognizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,7 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = aivatradev.SignLanguageRecognizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
