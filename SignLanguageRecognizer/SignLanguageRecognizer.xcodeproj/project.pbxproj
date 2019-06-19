@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,7 @@
 		46653EC722A78FD600993E85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46653EC522A78FD600993E85 /* LaunchScreen.storyboard */; };
 		46653ED222A78FD600993E85 /* SignLanguageRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46653ED122A78FD600993E85 /* SignLanguageRecognizerTests.swift */; };
 		46653EDD22A78FD600993E85 /* SignLanguageRecognizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46653EDC22A78FD600993E85 /* SignLanguageRecognizerUITests.swift */; };
-		4685915822B9FCF70000141B /* SignClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4685915722B9FCF70000141B /* SignClassifier.mlmodel */; };
+		A9A65E9D22BAA15C00A1BA85 /* SignLanguageRecognizer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9A65E9C22BAA15C00A1BA85 /* SignLanguageRecognizer.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +62,11 @@
 		46653ED822A78FD600993E85 /* SignLanguageRecognizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignLanguageRecognizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46653EDC22A78FD600993E85 /* SignLanguageRecognizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignLanguageRecognizerUITests.swift; sourceTree = "<group>"; };
 		46653EDE22A78FD600993E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4685915722B9FCF70000141B /* SignClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SignClassifier.mlmodel; sourceTree = "<group>"; };
 		510D4B4B987FDD63F0C8AB18 /* Pods-SignLanguageRecognizerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignLanguageRecognizerUITests.release.xcconfig"; path = "Target Support Files/Pods-SignLanguageRecognizerUITests/Pods-SignLanguageRecognizerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		52574C88CB26E216D360F7B9 /* Pods-SignLanguageRecognizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignLanguageRecognizer.release.xcconfig"; path = "Target Support Files/Pods-SignLanguageRecognizer/Pods-SignLanguageRecognizer.release.xcconfig"; sourceTree = "<group>"; };
 		77D20CB2C255EFD1DEAA8BCB /* Pods-SignLanguageRecognizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignLanguageRecognizer.debug.xcconfig"; path = "Target Support Files/Pods-SignLanguageRecognizer/Pods-SignLanguageRecognizer.debug.xcconfig"; sourceTree = "<group>"; };
 		865FB3C29DF51FCF5ADC0C71 /* Pods-SignLanguageRecognizerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignLanguageRecognizerTests.release.xcconfig"; path = "Target Support Files/Pods-SignLanguageRecognizerTests/Pods-SignLanguageRecognizerTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9A65E9C22BAA15C00A1BA85 /* SignLanguageRecognizer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SignLanguageRecognizer.mlmodel; sourceTree = "<group>"; };
 		CDFBAADCD3FD57A02AEC2DD3 /* Pods-SignLanguageRecognizerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignLanguageRecognizerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SignLanguageRecognizerUITests/Pods-SignLanguageRecognizerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E22B1432021279C4F4E72D3C /* Pods_SignLanguageRecognizerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignLanguageRecognizerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -130,8 +130,8 @@
 				4661718C22B588DF009A461B /* ViewController+Subview.swift */,
 				4661718E22B588F1009A461B /* ViewController+Setup.swift */,
 				4661719022B58AF9009A461B /* ViewController+Capture.swift */,
+				A9A65E9C22BAA15C00A1BA85 /* SignLanguageRecognizer.mlmodel */,
 				46653EC022A78FD400993E85 /* Main.storyboard */,
-				4685915722B9FCF70000141B /* SignClassifier.mlmodel */,
 				46653EC322A78FD600993E85 /* Assets.xcassets */,
 				46653EC522A78FD600993E85 /* LaunchScreen.storyboard */,
 				46653EC822A78FD600993E85 /* Info.plist */,
@@ -383,16 +383,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SignLanguageRecognizer/Pods-SignLanguageRecognizer-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SignLanguageRecognizer/Pods-SignLanguageRecognizer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SignLanguageRecognizer/Pods-SignLanguageRecognizer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -407,9 +402,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46653EBF22A78FD400993E85 /* ViewController.swift in Sources */,
+				A9A65E9D22BAA15C00A1BA85 /* SignLanguageRecognizer.mlmodel in Sources */,
 				4661719122B58AF9009A461B /* ViewController+Capture.swift in Sources */,
 				4661718B22B588CA009A461B /* ViewController+Component.swift in Sources */,
-				4685915822B9FCF70000141B /* SignClassifier.mlmodel in Sources */,
 				46653EBD22A78FD400993E85 /* AppDelegate.swift in Sources */,
 				4661718F22B588F1009A461B /* ViewController+Setup.swift in Sources */,
 				4661718D22B588DF009A461B /* ViewController+Subview.swift in Sources */,

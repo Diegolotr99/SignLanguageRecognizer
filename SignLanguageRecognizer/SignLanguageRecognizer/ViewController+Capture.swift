@@ -27,7 +27,7 @@ extension ViewController {
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         
         // model goes here!
-        guard let model = try? VNCoreMLModel(for: SignClassifier().model) else { return }
+        guard let model = try? VNCoreMLModel(for: SignLanguageRecognizer().model) else { return }
         
         let request = VNCoreMLRequest(model: model) { (req, err) in
             
