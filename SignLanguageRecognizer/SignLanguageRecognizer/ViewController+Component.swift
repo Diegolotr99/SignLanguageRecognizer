@@ -23,7 +23,7 @@ extension ViewController {
         predictLabel.textAlignment = .center
         predictLabel.backgroundColor = UIColor.white
         predictLabel.textColor = UIColor.black
-        predictLabel.font = predictLabel.font.withSize(20)
+        predictLabel.font = predictLabel.font.withSize(35)
         predictLabel.numberOfLines = 0
         predictLabel.sizeToFit()
     }
