@@ -11,6 +11,8 @@ import AVKit
 
 extension ViewController {
     func createComponent() {
+        
+        // Add capture session
         captureSession = AVCaptureSession()
         guard let captureDevice = AVCaptureDevice.default(for: .video) else { return }
         guard let input = try? AVCaptureDeviceInput(device: captureDevice) else { return }
@@ -26,5 +28,31 @@ extension ViewController {
         predictLabel.font = predictLabel.font.withSize(35)
         predictLabel.numberOfLines = 0
         predictLabel.sizeToFit()
+        
+        // Add gesture recognizer
+        let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(self.handlePinch(_:)))
+        self.view.addGestureRecognizer(pinchGesture)
+    }
+    
+    @objc func handlePinch(_ sender: UIPinchGestureRecognizer? = nil) {
+        guard let captureDevice = AVCaptureDevice.default(for: .video), let sender = sender else { return }
+
+        if sender.state == .changed {
+            
+            let maxZoomFactor = captureDevice.activeFormat.videoMaxZoomFactor
+            let pinchVelocityDividerFactor: CGFloat = 5.0
+            
+            do {
+                
+                try captureDevice.lockForConfiguration()
+                defer { captureDevice.unlockForConfiguration() }
+                
+                let desiredZoomFactor = captureDevice.videoZoomFactor + atan2(sender.velocity, pinchVelocityDividerFactor)
+                captureDevice.videoZoomFactor = max(1.0, min(desiredZoomFactor, maxZoomFactor))
+                
+            } catch {
+                print(error)
+            }
+        }
     }
 }
